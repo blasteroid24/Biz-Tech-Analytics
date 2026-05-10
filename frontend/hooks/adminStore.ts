@@ -62,16 +62,16 @@ export const useAdminStore = create<AdminState>()(
                     });
 
                     if (response.data.success) {
-                        set({ 
+                        set({
                             isVerified: true,
                             admin: response.data.admin
                         });
                         return true;
                     }
-                    
+
                     set({ isVerified: false });
                     return false;
-                } catch (error: any) {
+                } catch (error) {
                     set({ isVerified: false });
                     get().clearAuth();
                     return false;

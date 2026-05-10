@@ -66,7 +66,6 @@ const Dashboard = () => {
                                 { icon: FiGrid, label: "Dashboard", id: "overview" },
                                 { icon: FiUsers, label: "Workforce", id: "workers" },
                                 { icon: FiActivity, label: "Production", id: "stations" },
-                                { icon: FiTrendingUp, label: "Analytics", id: "live" },
                             ].map((item) => (
                                 <button
                                     key={item.id}
@@ -88,7 +87,7 @@ const Dashboard = () => {
                         {isSidebarOpen && <p className="px-4 mb-4 text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">Management</p>}
                         <nav className="space-y-1.5">
                             {[
-                                { icon: FiSettings, label: "Core Settings", id: "settings" },
+                                { icon: FiSettings, label: "Settings", id: "settings" },
                             ].map((item) => (
                                 <button
                                     key={item.id}
