@@ -10,6 +10,8 @@ build/
 
 # Environment variables
 .env
+.env.production
+
 # Debug logs
 npm-debug.log*
 yarn-debug.log*

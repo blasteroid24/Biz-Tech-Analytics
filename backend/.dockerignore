@@ -7,3 +7,5 @@ dist
 .env.development
 .env.example
 .env.production
+.env.docker
+.env.local
